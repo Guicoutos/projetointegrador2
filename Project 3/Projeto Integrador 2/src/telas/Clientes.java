@@ -37,6 +37,9 @@ public class Clientes extends javax.swing.JFrame {
         buttonInicio = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(700, 500));
+        setResizable(false);
+        setSize(new java.awt.Dimension(700, 500));
 
         desktopMenu.setBackground(new java.awt.Color(153, 153, 255));
 
@@ -62,16 +65,31 @@ public class Clientes extends javax.swing.JFrame {
 
         buttonEstoque.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
         buttonEstoque.setText("ESTOQUE");
+        buttonEstoque.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonEstoqueActionPerformed(evt);
+            }
+        });
         desktopMenu.add(buttonEstoque);
         buttonEstoque.setBounds(10, 240, 140, 40);
 
         buttonVendas.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
         buttonVendas.setText("VENDAS");
+        buttonVendas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonVendasActionPerformed(evt);
+            }
+        });
         desktopMenu.add(buttonVendas);
         buttonVendas.setBounds(10, 140, 140, 40);
 
         buttonFornecedores.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
         buttonFornecedores.setText("FORNECEDORES");
+        buttonFornecedores.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonFornecedoresActionPerformed(evt);
+            }
+        });
         desktopMenu.add(buttonFornecedores);
         buttonFornecedores.setBounds(10, 290, 140, 40);
 
@@ -87,6 +105,11 @@ public class Clientes extends javax.swing.JFrame {
 
         buttonInicio.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
         buttonInicio.setText("INÍCIO");
+        buttonInicio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonInicioActionPerformed(evt);
+            }
+        });
         desktopMenu.add(buttonInicio);
         buttonInicio.setBounds(10, 40, 140, 40);
 
@@ -106,19 +129,36 @@ public class Clientes extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void buttonFuncionariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonFuncionariosActionPerformed
-        // TODO add your handling code here:
+        Funcionarios TFUNC = new Funcionarios();
     }//GEN-LAST:event_buttonFuncionariosActionPerformed
 
     private void buttonClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonClientesActionPerformed
-        // TODO add your handling code here:
+        Clientes TCLI = new Clientes();
     }//GEN-LAST:event_buttonClientesActionPerformed
+
+    private void buttonEstoqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonEstoqueActionPerformed
+        Estoque TESTQ = new Estoque();
+    }//GEN-LAST:event_buttonEstoqueActionPerformed
+
+    private void buttonVendasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonVendasActionPerformed
+        Vendas TVEN = new Vendas();
+    }//GEN-LAST:event_buttonVendasActionPerformed
+
+    private void buttonFornecedoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonFornecedoresActionPerformed
+        Fornecedores TFOR = new Fornecedores();
+    }//GEN-LAST:event_buttonFornecedoresActionPerformed
 
     private void buttonSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSairActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_buttonSairActionPerformed
+
+    private void buttonInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonInicioActionPerformed
+        Menu TMENU = new Menu();
+    }//GEN-LAST:event_buttonInicioActionPerformed
 
     /**
      * @param args the command line arguments

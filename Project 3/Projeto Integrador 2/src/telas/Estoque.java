@@ -7,14 +7,14 @@ package telas;
 
 /**
  *
- * @author 42121742018.1
+ * @author Guilh
  */
-public class Menu extends javax.swing.JFrame {
+public class Estoque extends javax.swing.JFrame {
 
     /**
-     * Creates new form Menu
+     * Creates new form Estoque
      */
-    public Menu() {
+    public Estoque() {
         initComponents();
     }
 
@@ -27,8 +27,6 @@ public class Menu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        textCPFCliente = new javax.swing.JTextField();
-        buttonConsultarCPF = new javax.swing.JButton();
         desktopMenu = new javax.swing.JDesktopPane();
         buttonFuncionarios = new javax.swing.JButton();
         buttonClientes = new javax.swing.JButton();
@@ -37,28 +35,12 @@ public class Menu extends javax.swing.JFrame {
         buttonFornecedores = new javax.swing.JButton();
         buttonSair = new javax.swing.JButton();
         buttonInicio = new javax.swing.JButton();
-        labelResultadoCPFCliente = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(700, 500));
         setMinimumSize(new java.awt.Dimension(700, 500));
-        setPreferredSize(new java.awt.Dimension(700, 500));
+        setResizable(false);
         setSize(new java.awt.Dimension(700, 500));
-        getContentPane().setLayout(null);
-
-        textCPFCliente.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
-        textCPFCliente.setText("Insira o CPF do Cliente");
-        getContentPane().add(textCPFCliente);
-        textCPFCliente.setBounds(250, 390, 220, 30);
-
-        buttonConsultarCPF.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
-        buttonConsultarCPF.setText("CONSULTAR");
-        buttonConsultarCPF.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonConsultarCPFActionPerformed(evt);
-            }
-        });
-        getContentPane().add(buttonConsultarCPF);
-        buttonConsultarCPF.setBounds(490, 390, 130, 29);
 
         desktopMenu.setBackground(new java.awt.Color(153, 153, 255));
 
@@ -132,14 +114,22 @@ public class Menu extends javax.swing.JFrame {
         desktopMenu.add(buttonInicio);
         buttonInicio.setBounds(10, 40, 140, 40);
 
-        getContentPane().add(desktopMenu);
-        desktopMenu.setBounds(0, 0, 160, 500);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(desktopMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 540, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(desktopMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
-        labelResultadoCPFCliente.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
-        getContentPane().add(labelResultadoCPFCliente);
-        labelResultadoCPFCliente.setBounds(260, 440, 350, 30);
-
-        setSize(new java.awt.Dimension(716, 539));
+        pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -151,25 +141,21 @@ public class Menu extends javax.swing.JFrame {
         Clientes TCLI = new Clientes();
     }//GEN-LAST:event_buttonClientesActionPerformed
 
-    private void buttonConsultarCPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonConsultarCPFActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_buttonConsultarCPFActionPerformed
-
-    private void buttonSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSairActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_buttonSairActionPerformed
+    private void buttonEstoqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonEstoqueActionPerformed
+        Estoque TESTQ = new Estoque();
+    }//GEN-LAST:event_buttonEstoqueActionPerformed
 
     private void buttonVendasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonVendasActionPerformed
         Vendas TVEN = new Vendas();
     }//GEN-LAST:event_buttonVendasActionPerformed
 
-    private void buttonEstoqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonEstoqueActionPerformed
-        Estoque TESTQ = new Estoque();
-    }//GEN-LAST:event_buttonEstoqueActionPerformed
-
     private void buttonFornecedoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonFornecedoresActionPerformed
         Fornecedores TFOR = new Fornecedores();
     }//GEN-LAST:event_buttonFornecedoresActionPerformed
+
+    private void buttonSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSairActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonSairActionPerformed
 
     private void buttonInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonInicioActionPerformed
         Menu TMENU = new Menu();
@@ -192,27 +178,26 @@ public class Menu extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Estoque.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Estoque.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Estoque.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Estoque.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Menu().setVisible(true);
+                new Estoque().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton buttonClientes;
-    private javax.swing.JButton buttonConsultarCPF;
     private javax.swing.JButton buttonEstoque;
     private javax.swing.JButton buttonFornecedores;
     private javax.swing.JButton buttonFuncionarios;
@@ -220,7 +205,5 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JButton buttonSair;
     private javax.swing.JButton buttonVendas;
     private javax.swing.JDesktopPane desktopMenu;
-    private javax.swing.JLabel labelResultadoCPFCliente;
-    private javax.swing.JTextField textCPFCliente;
     // End of variables declaration//GEN-END:variables
 }
