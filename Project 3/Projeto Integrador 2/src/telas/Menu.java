@@ -27,19 +27,117 @@ public class Menu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        textCPFCliente = new javax.swing.JTextField();
+        buttonConsultarCPF = new javax.swing.JButton();
+        desktopMenu = new javax.swing.JDesktopPane();
+        buttonFuncionarios = new javax.swing.JButton();
+        buttonClientes = new javax.swing.JButton();
+        buttonEstoque = new javax.swing.JButton();
+        buttonVendas = new javax.swing.JButton();
+        buttonFornecedores = new javax.swing.JButton();
+        buttonSair = new javax.swing.JButton();
+        buttonInicio = new javax.swing.JButton();
+        labelResultadoCPFCliente = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setResizable(false);
+        setMinimumSize(new java.awt.Dimension(700, 500));
+        setPreferredSize(new java.awt.Dimension(700, 500));
+        setSize(new java.awt.Dimension(700, 500));
         getContentPane().setLayout(null);
 
-        jLabel1.setText("TAFAREEEEEEEELLLLLL!");
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(120, 120, 230, 30);
+        textCPFCliente.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
+        textCPFCliente.setText("Insira o CPF do Cliente");
+        getContentPane().add(textCPFCliente);
+        textCPFCliente.setBounds(250, 390, 220, 30);
 
-        setSize(new java.awt.Dimension(416, 339));
+        buttonConsultarCPF.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
+        buttonConsultarCPF.setText("CONSULTAR");
+        buttonConsultarCPF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonConsultarCPFActionPerformed(evt);
+            }
+        });
+        getContentPane().add(buttonConsultarCPF);
+        buttonConsultarCPF.setBounds(490, 390, 130, 29);
+
+        desktopMenu.setBackground(new java.awt.Color(153, 153, 255));
+
+        buttonFuncionarios.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
+        buttonFuncionarios.setText("FUNCIONÁRIOS");
+        buttonFuncionarios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonFuncionariosActionPerformed(evt);
+            }
+        });
+        desktopMenu.add(buttonFuncionarios);
+        buttonFuncionarios.setBounds(10, 190, 140, 40);
+
+        buttonClientes.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
+        buttonClientes.setText("CLIENTES");
+        buttonClientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonClientesActionPerformed(evt);
+            }
+        });
+        desktopMenu.add(buttonClientes);
+        buttonClientes.setBounds(10, 90, 140, 40);
+
+        buttonEstoque.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
+        buttonEstoque.setText("ESTOQUE");
+        desktopMenu.add(buttonEstoque);
+        buttonEstoque.setBounds(10, 240, 140, 40);
+
+        buttonVendas.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
+        buttonVendas.setText("VENDAS");
+        desktopMenu.add(buttonVendas);
+        buttonVendas.setBounds(10, 140, 140, 40);
+
+        buttonFornecedores.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
+        buttonFornecedores.setText("FORNECEDORES");
+        desktopMenu.add(buttonFornecedores);
+        buttonFornecedores.setBounds(10, 290, 140, 40);
+
+        buttonSair.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
+        buttonSair.setText("SAIR");
+        buttonSair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonSairActionPerformed(evt);
+            }
+        });
+        desktopMenu.add(buttonSair);
+        buttonSair.setBounds(10, 420, 140, 40);
+
+        buttonInicio.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
+        buttonInicio.setText("INÍCIO");
+        desktopMenu.add(buttonInicio);
+        buttonInicio.setBounds(10, 40, 140, 40);
+
+        getContentPane().add(desktopMenu);
+        desktopMenu.setBounds(0, 0, 160, 500);
+
+        labelResultadoCPFCliente.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
+        getContentPane().add(labelResultadoCPFCliente);
+        labelResultadoCPFCliente.setBounds(260, 440, 350, 30);
+
+        setSize(new java.awt.Dimension(716, 539));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void buttonFuncionariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonFuncionariosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonFuncionariosActionPerformed
+
+    private void buttonClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonClientesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonClientesActionPerformed
+
+    private void buttonConsultarCPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonConsultarCPFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonConsultarCPFActionPerformed
+
+    private void buttonSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSairActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonSairActionPerformed
 
     /**
      * @param args the command line arguments
@@ -77,6 +175,16 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton buttonClientes;
+    private javax.swing.JButton buttonConsultarCPF;
+    private javax.swing.JButton buttonEstoque;
+    private javax.swing.JButton buttonFornecedores;
+    private javax.swing.JButton buttonFuncionarios;
+    private javax.swing.JButton buttonInicio;
+    private javax.swing.JButton buttonSair;
+    private javax.swing.JButton buttonVendas;
+    private javax.swing.JDesktopPane desktopMenu;
+    private javax.swing.JLabel labelResultadoCPFCliente;
+    private javax.swing.JTextField textCPFCliente;
     // End of variables declaration//GEN-END:variables
 }
